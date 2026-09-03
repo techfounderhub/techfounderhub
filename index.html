@@ -114,20 +114,32 @@
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(135deg, var(--primary-color) 0%, #F9F9F9 100%);
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('m3.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
             padding: 80px 40px;
             text-align: center;
+            min-height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .hero-container {
-            max-width: 900px;
+            max-width: 700px;
             margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 60px 50px;
+            border-radius: 16px;
+            box-shadow: 0 16px 48px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
         }
 
         .hero h1 {
-            font-size: 56px;
+            font-size: 48px;
             color: var(--secondary-color);
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             line-height: 1.2;
             font-weight: 700;
             letter-spacing: -1px;
@@ -152,27 +164,16 @@
         }
 
         .hero-tagline {
-            font-size: 18px;
-            color: #555;
-            font-weight: 500;
+            font-size: 16px;
+            color: #666;
+            font-weight: 400;
             text-align: center;
-            margin-bottom: 40px;
+            margin-bottom: 35px;
             letter-spacing: 0;
-            line-height: 1.6;
+            line-height: 1.7;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
         }
 
-        .hero-image {
-            max-width: 800px;
-            width: 100%;
-            height: auto;
-            margin-top: 40px;
-            border-radius: 12px;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            box-shadow: 0 8px 32px rgba(27, 31, 107, 0.12);
-        }
 
         .cta-button {
             display: inline-block;
@@ -629,7 +630,6 @@
             <h1>AIエージェント専門コース</h1>
             <h2 class="hero-tagline">業界トップリーダーから学ぶ厳選された知識と実践ノウハウ</h2>
             <button class="cta-button">無料で受講</button>
-            <img src="m3.jpeg" alt="Top AI Leaders" class="hero-image">
         </div>
     </section>
 
