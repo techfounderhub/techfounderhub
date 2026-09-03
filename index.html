@@ -35,7 +35,7 @@
 
         /* Header */
         header {
-            background: #000000;
+            background: #F5F5F7;
             padding: 0;
             border-bottom: none;
             position: sticky;
@@ -57,7 +57,7 @@
         .logo {
             font-size: 16px;
             font-weight: 500;
-            color: #FFFFFF;
+            color: #1D1D1F;
             letter-spacing: 0.5px;
             white-space: nowrap;
             flex-shrink: 0;
@@ -72,7 +72,7 @@
         }
 
         nav a {
-            color: #FFFFFF;
+            color: #1D1D1F;
             text-decoration: none;
             font-size: 12px;
             font-weight: 400;
@@ -86,7 +86,7 @@
 
         nav a:hover {
             opacity: 0.7;
-            border-bottom-color: rgba(255, 255, 255, 0.3);
+            border-bottom-color: rgba(29, 29, 31, 0.3);
         }
 
         .nav-right {
@@ -102,7 +102,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #FFFFFF;
+            color: #1D1D1F;
             cursor: pointer;
             font-size: 16px;
             transition: opacity 0.2s ease;
@@ -152,12 +152,14 @@
         }
 
         .hero-tagline {
-            font-size: 14px !important;
-            color: #999 !important;
-            font-weight: 400;
+            font-size: 18px;
+            color: #555;
+            font-weight: 500;
             text-align: center;
-            margin-bottom: 40px !important;
-            letter-spacing: 0.5px;
+            margin-bottom: 40px;
+            letter-spacing: 0;
+            line-height: 1.6;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
         }
 
         .cta-button {
@@ -600,8 +602,8 @@
     <section class="hero">
         <div class="hero-container">
             <h1>AIエージェント専門コース</h1>
-            <p class="hero-subtitle">AIエージェントの基礎概念をマスターし、<br>実践的なスキルを身につける</p>
-            <p class="hero-tagline">業界トップリーダーから学ぶ厳選された知識と実践ノウハウ</p>
+            <h2 class="hero-tagline">業界トップリーダーから学ぶ厳選された知識と実践ノウハウ</h2>
+            <button class="cta-button">無料で始める</button>
         </div>
     </section>
 
