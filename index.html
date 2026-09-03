@@ -241,30 +241,226 @@
             border-bottom: 1px solid var(--border-color);
         }
 
-        /* CTA Section */
-        .cta-section {
+        /* Pain Points Section */
+        .pain-points {
+            padding: 80px 40px;
+            background: var(--primary-color);
+        }
+
+        .pain-points-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .pain-points h2 {
+            font-size: 42px;
+            color: var(--secondary-color);
+            margin-bottom: 30px;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+
+        .pain-intro {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 50px;
+            line-height: 1.8;
+        }
+
+        .pain-list {
+            display: grid;
+            gap: 20px;
+        }
+
+        .pain-item {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+            border-left: 4px solid var(--secondary-color);
+            background: #F9F9F9;
+            border-radius: 4px;
+        }
+
+        .pain-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            background: var(--secondary-color);
+            color: var(--primary-color);
+            border-radius: 50%;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .pain-item p {
+            color: #333;
+            font-size: 15px;
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        /* Results Section */
+        .results {
+            padding: 80px 40px;
+            background: #F9F9F9;
+        }
+
+        .results-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .results h2 {
+            font-size: 42px;
+            color: var(--secondary-color);
+            margin-bottom: 60px;
+            text-align: center;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+
+        .testimonial-card {
+            background: var(--primary-color);
+            padding: 40px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            transition: all 0.3s;
+        }
+
+        .testimonial-card:hover {
+            box-shadow: 0 8px 24px rgba(27, 31, 107, 0.1);
+            border-color: var(--secondary-color);
+        }
+
+        .testimonial-card h3 {
+            font-size: 20px;
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .testimonial-placeholder {
+            color: #999;
+            font-style: italic;
+            font-size: 14px;
+        }
+
+        /* Courses Section */
+        .courses {
+            padding: 80px 40px;
+            background: var(--primary-color);
+        }
+
+        .courses-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .courses h2 {
+            font-size: 42px;
+            color: var(--secondary-color);
+            margin-bottom: 60px;
+            text-align: center;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+
+        .courses-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .course-card {
+            background: var(--primary-color);
+            padding: 30px;
+            border: 2px solid var(--border-color);
+            border-radius: 8px;
+            transition: all 0.3s;
+            position: relative;
+        }
+
+        .course-card:hover {
+            border-color: var(--secondary-color);
+            box-shadow: 0 8px 32px rgba(27, 31, 107, 0.12);
+        }
+
+        .course-card.coming-soon {
+            opacity: 0.7;
+            background: #F9F9F9;
+        }
+
+        .course-number {
+            display: inline-block;
+            background: var(--secondary-color);
+            color: var(--primary-color);
+            padding: 8px 14px;
+            border-radius: 4px;
+            font-weight: 700;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .course-card h3 {
+            font-size: 18px;
+            color: var(--secondary-color);
+            margin-bottom: 12px;
+            font-weight: 700;
+            line-height: 1.4;
+        }
+
+        .course-description {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .course-skill {
+            background: #F9F9F9;
+            padding: 15px;
+            border-radius: 4px;
+            border-left: 3px solid var(--secondary-color);
+        }
+
+        .course-skill strong {
+            color: var(--secondary-color);
+            font-size: 13px;
+        }
+
+        .course-skill p {
+            color: #555;
+            font-size: 13px;
+            margin-top: 8px;
+            line-height: 1.6;
+        }
+
+        /* Enrollment CTA Section */
+        .enrollment-section {
             padding: 80px 40px;
             background: var(--secondary-color);
             color: var(--primary-color);
             text-align: center;
         }
 
-        .cta-section-container {
+        .enrollment-container {
             max-width: 800px;
             margin: 0 auto;
         }
 
-        .cta-section h2 {
+        .enrollment-section h2 {
             font-size: 42px;
-            margin-bottom: 20px;
+            margin-bottom: 40px;
             color: var(--primary-color);
             font-weight: 700;
-        }
-
-        .cta-section p {
-            font-size: 18px;
-            margin-bottom: 40px;
-            color: rgba(255, 255, 255, 0.9);
         }
 
         .cta-button-light {
@@ -328,102 +524,114 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Section 1: Global Reach & Pain Points -->
     <section class="hero">
         <div class="hero-container">
-            <h1>Master AI Agents & Automation</h1>
-            <p>Learn to build, deploy, and scale AI agents that work 24/7. From fundamentals to production-ready systems.</p>
-            <button class="cta-button">Start Learning Today</button>
+            <h1>米国20名+  日本18+  中国10+<br>すでに受講</h1>
+            <p style="font-size: 16px; color: #999; margin-top: 30px;">(Maybe I can help? not sure check out)</p>
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section class="features" id="features">
-        <h2>What You'll Learn</h2>
-        <div class="features-grid">
-            <div class="feature-card">
-                <h3>AI Agent Fundamentals</h3>
-                <p>Understand the core concepts of AI agents, how they think, and what makes them powerful tools for automation.</p>
-            </div>
-            <div class="feature-card">
-                <h3>Building Real Systems</h3>
-                <p>Build production-ready AI agents from scratch. Learn frameworks, architectures, and best practices used by industry leaders.</p>
-            </div>
-            <div class="feature-card">
-                <h3>Deployment & Scaling</h3>
-                <p>Deploy your agents to the cloud, monitor performance, and scale to handle millions of requests.</p>
-            </div>
-            <div class="feature-card">
-                <h3>Advanced Techniques</h3>
-                <p>Master prompt engineering, tool integration, memory systems, and multi-agent orchestration.</p>
-            </div>
-            <div class="feature-card">
-                <h3>Real-World Projects</h3>
-                <p>Build real applications: customer service bots, data analysis agents, content generators, and more.</p>
-            </div>
-            <div class="feature-card">
-                <h3>Career Growth</h3>
-                <p>Join a community of AI builders. Get access to job board, mentorship, and networking opportunities.</p>
-            </div>
-        </div>
-    </section>
+    <!-- Pain Points Section -->
+    <section class="pain-points">
+        <div class="pain-points-container">
+            <h2>Specific Pain</h2>
+            <p class="pain-intro">非エンジニアとエンジニア、AIエージェントの学びでこのような悩みはありませんか?</p>
 
-    <!-- Pricing Section -->
-    <section class="pricing" id="pricing">
-        <div class="pricing-container">
-            <h2>Simple, Transparent Pricing</h2>
-            <div class="pricing-grid">
-                <div class="pricing-card">
-                    <h3>Starter</h3>
-                    <div class="price">$49</div>
-                    <div class="price-description">per month</div>
-                    <ul class="pricing-features">
-                        <li>✓ All course materials</li>
-                        <li>✓ Video lectures</li>
-                        <li>✓ Community access</li>
-                        <li>✗ Project reviews</li>
-                        <li>✗ 1-on-1 mentorship</li>
-                    </ul>
-                    <button class="cta-button">Get Started</button>
+            <div class="pain-list">
+                <div class="pain-item">
+                    <span class="pain-number">①</span>
+                    <p>AIエージェントの知識が世の中に散らばりすぎて、何から学べばいいか分からず混乱している</p>
                 </div>
-
-                <div class="pricing-card featured">
-                    <h3>Professional</h3>
-                    <div class="price">$149</div>
-                    <div class="price-description">per month</div>
-                    <ul class="pricing-features">
-                        <li>✓ All course materials</li>
-                        <li>✓ Video lectures</li>
-                        <li>✓ Community access</li>
-                        <li>✓ Project reviews</li>
-                        <li>✓ 1-on-1 mentorship</li>
-                    </ul>
-                    <button class="cta-button">Get Started</button>
+                <div class="pain-item">
+                    <span class="pain-number">②</span>
+                    <p>理論の解説ばかりで、実際に手を動かして使えるようになる情報が少ない</p>
                 </div>
-
-                <div class="pricing-card">
-                    <h3>Enterprise</h3>
-                    <div class="price">Custom</div>
-                    <div class="price-description">contact us</div>
-                    <ul class="pricing-features">
-                        <li>✓ All features</li>
-                        <li>✓ Team training</li>
-                        <li>✓ Custom curriculum</li>
-                        <li>✓ Dedicated support</li>
-                        <li>✓ Private deployment</li>
-                    </ul>
-                    <button class="cta-button">Contact Sales</button>
+                <div class="pain-item">
+                    <span class="pain-number">③</span>
+                    <p>講座やスクールの受講料が高すぎて、気軽に試せない</p>
+                </div>
+                <div class="pain-item">
+                    <span class="pain-number">④</span>
+                    <p>AIエージェントに一番大事な概念だけを知りたい、それが転職・就職につながるものだけでいい</p>
+                </div>
+                <div class="pain-item">
+                    <span class="pain-number">⑤</span>
+                    <p>色々な講座を受けても知識がバラバラのままで、実務や面接で「結局何ができるのか」を人に説明できない</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="cta-section-container">
-            <h2>Ready to Build with AI?</h2>
-            <p>Join hundreds of developers learning to build the future with AI agents.</p>
-            <button class="cta-button-light">Enroll Now</button>
+    <!-- Results / Testimonials Section -->
+    <section class="results">
+        <div class="results-container">
+            <h2>Results</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <h3>Aさん(エンジニア職)</h3>
+                    <p class="testimonial-placeholder">[実際の受講者コメント・Before/Afterを挿入]</p>
+                </div>
+                <div class="testimonial-card">
+                    <h3>Bさん(非エンジニア職)</h3>
+                    <p class="testimonial-placeholder">[実際の受講者コメント・Before/Afterを挿入]</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Course Modules -->
+    <section class="courses">
+        <div class="courses-container">
+            <h2>講座を提供</h2>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-number">M1</div>
+                    <h3>AIエージェント紹介</h3>
+                    <p class="course-description">AIエージェントとは何か、なぜ今注目されているのかを基礎から理解する</p>
+                    <div class="course-skill">
+                        <strong>得られるスキル:</strong>
+                        <p>AIエージェントの全体像を人に説明できるレベルの基礎知識</p>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-number">M2</div>
+                    <h3>AIエージェント向けLLMトレーニング入門</h3>
+                    <p class="course-description">AIエージェントを動かすLLMの仕組みと、実践で使えるトレーニングの基本を学ぶ</p>
+                    <div class="course-skill">
+                        <strong>得られるスキル:</strong>
+                        <p>LLMの挙動を理解し、目的に応じて調整・活用できる基礎力</p>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-number">M3</div>
+                    <h3>AIエンジニア視点で見るシステム設計の進化</h3>
+                    <p class="course-description">従来のシステム設計からAIエージェント時代の設計への変化を、現場目線で追う</p>
+                    <div class="course-skill">
+                        <strong>得られるスキル:</strong>
+                        <p>AI時代のシステム設計を俯瞰し、自分のプロダクトに応用できる視点</p>
+                    </div>
+                </div>
+
+                <div class="course-card coming-soon">
+                    <div class="course-number">M4〜M13</div>
+                    <h3>近日公開</h3>
+                    <p class="course-description">9月〜10月に追加モジュール公開予定</p>
+                    <div class="course-skill">
+                        <p style="text-align: center; color: #999;">More modules coming soon</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Enrollment CTA -->
+    <section class="enrollment-section">
+        <div class="enrollment-container">
+            <h2>M1〜M2の講座の受け取りは以下から</h2>
+            <button class="cta-button-light">受講リンク / CTAボタンを挿入</button>
         </div>
     </section>
 
