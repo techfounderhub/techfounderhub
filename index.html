@@ -457,8 +457,8 @@
         }
 
         .courses-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            display: flex;
+            flex-direction: column;
             gap: 30px;
         }
 
@@ -469,6 +469,8 @@
             border-radius: 8px;
             transition: all 0.3s;
             position: relative;
+            display: flex;
+            flex-direction: column;
         }
 
         .course-card:hover {
